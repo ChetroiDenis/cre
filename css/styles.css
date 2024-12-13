@@ -61,6 +61,24 @@ header {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+.mobile-navbar {
+    display: none;
+
+}
+
+.mobile-navbar h2 {
+    display: none;
+}
+
+.menu-bars img {
+    display: none;
+}
+
+.mobile-logo img {
+    display: none;
+}
+
+
 
 
 /* Stilizare pentru bara de scrool */
@@ -113,7 +131,7 @@ header {
     font-size: 24px;
     margin-top: -120px;
     color: #333;
-    white-space: nowrap;
+
     overflow: hidden;
     border-right: 2px solid black;
     animation: blinkCursor 0.5s step-end infinite;
@@ -139,7 +157,7 @@ header {
 
 .numar-cont {
     width: 1100px;
-    height: 150px   ;
+    height: 150px;
     background-color: #007aff;
     display: flex;
     justify-content: center;
@@ -397,10 +415,7 @@ h2.visible::before {
     padding-top: 20px;
 }
 
-.footer-col1 h2 {
-   
-
-}
+.footer-col1 h2 {}
 
 .footer-col1 img {
     width: 30px;
@@ -455,7 +470,7 @@ h2.visible::before {
 }
 
 .footer-col4 {
-padding-right: 300px;
+    padding-right: 300px;
     color: white;
     padding-top: 20px;
 
@@ -480,27 +495,89 @@ padding-right: 300px;
     }
 
     .principal-title {
-        font-size: 30px;
-        width: ;
+        display: none;
     }
 
-    .typewriter p {
-        font-size: 20px;
-     
-
+    .img2 {
+        display: none;
     }
 
-    .count {
-
-    }
 
     .numar-cont {
-        width: 350px;
+        width: 400px;
+        height: 250px;
+        background-color: #007aff;
         display: flex;
         flex-direction: column;
-        height: 350px;
+        justify-content: center;
+        border-radius: 50px;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.587);
+        transition: 1s;
+
     }
-    .type {
-        max-width: 200px;
+
+    .numar-cont:hover {
+        width: 400px;
+        background-color: #007aff;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        box-shadow: 10px 10px rgba(0, 0, 0, 0.587);
+        transition: 1s;
+
+    }
+
+    .home-col {
+        display: none;
+    }
+
+
+    .mobile-navbar {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+
+        height: 200px;
+
+        margin-top: -100px;
+
+    }
+
+    .mobile-navbar h2 {
+        text-align: center;
+        color: #007aff;
+        padding-top: 100px;
+        display: block;
+    }
+
+    .menu-bars img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding-left: 30px;
+        padding-top: 125px;
+    }
+
+    .mobile-logo img {
+        width: 50px;
+        height: 80px;
+        margin-bottom: 0;
+        padding-right: 30px;
+        padding-top: 105px;
+        display: block;
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: 720px;
+        justify-content: start;
+    }
+
+    .footer-col4 {
+        width: 300px;
     }
 }
